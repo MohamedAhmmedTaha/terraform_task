@@ -35,7 +35,8 @@ resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
   ip_protocol       = "-1" 
 }
 resource "aws_instance" "web_server" {
-  ami = "ami-053b0d53c279acc90"
+  ami = var.image_id
+  # ami = "ami-053b0d53c279acc90"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.pub_subnet.id
   key_name      = aws_key_pair.my_key.key_name
