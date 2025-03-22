@@ -25,19 +25,15 @@ This project uses **Terraform** to deploy an AWS infrastructure that includes:
    ```bash
    terraform init
    ```
-2. **Validate the configuration**  
-   ```bash
-   terraform validate
-   ```
-3. **Preview the changes**  
+2. **Preview the changes**  
    ```bash
    terraform plan
    ```
-4. **Deploy the infrastructure**  
+3. **Deploy the infrastructure**  
    ```bash
    terraform apply -auto-approve
    ```
-5. **Retrieve the outputs**  
+4. **Retrieve the outputs**  
    ```bash
    terraform output
    ```
